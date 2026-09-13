@@ -51,5 +51,8 @@ describe('Conversor de Moedas - Mock de Módulo', () => {
     });
 });
 
-// Mocks: jest.fn() cria uma função falsa que substitui uma dependência
-// externa (uma API via Axios, por exemplo) e ainda registra como foi chamada. Usamos o mock para que o teste não dependa da internet.
+//Usamos o mock para que o teste não dependa da internet.
+
+/* Se o Axios não está fazendo uma requisição real, de onde vem o JSON utilizado pelo teste?
+ 
+Resposta: O JSON vem do próprio teste através do mockResolvedValue(), que simula a resposta que a API real retornaria. */
